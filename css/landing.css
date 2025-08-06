@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Numans&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+h1,h2,h3,h4,h5,h6 {
+  font-family: noto sans,serif,
+}
+.home{
+  min-height: 100vh;
+}
+.home .logo{
+  left: 0;
+}
+.home .container {
+  padding-top: 100px;
+}
+
+.home .items{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 3.2rem;
+}
+.home .item {
+  width: 100%;
+  grid-column: span;
+}
+
+.home .item-image{
+  width: 100%;
+  min-height: 90vh;
+  grid-column: span;
+  overflow: hidden;
+}
+
+.home .item-image img{
+  position: absolute;
+  width: 90vh;
+  height: 50vh;
+  object-fit: cover;
+  margin: 18% 45%;
+  display: flex;
+  
+}
+.home .title {
+  min-height: 5vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-family: Manufacturing;
+  font-size: 46px;
+  color: antiquewhite;
+}
+
+.home .desc{
+  position: absolute;
+  margin-top: 25%;
+  width: 45%;
+  color: antiquewhite;
+  padding: 10px;
+}
+
+
+
+@media  (max-width: 1500px) {
+  .home .title {
+    margin-left:30px;
+    width:100%;
+  }
+  .home .desc {
+    width: 80%;
+    top: 2%;
+    left: 10%;
+    font-size: 2em;
+  }
+  .home .item-image img{
+    top: 35% ;
+    width: 50%;
+    margin-left: 25%;
+  }
+  nav{
+    display: none;
+  }
+
+
+}
+@media (max-width: 812px){
+  .home .desc{
+    border: 2px solid yellowgreen
+  }
+  .home .item-image img{
+    top: 45%;
+    height: 38vh;
+  }   
+}  
+@media (max-width: 670px){
+  .home .desc {
+    top: 10vh;
+  }
+  .home .item-image img{
+   display: none;
+  }
+}
+  
+

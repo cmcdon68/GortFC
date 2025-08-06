@@ -1,0 +1,12 @@
+.logo img {
+  width: 50%;
+  height: 100%;
+}
+.logo {
+  display: flex;
+  width:120px;
+  height: 120px;
+  border:2px dotted blue;
+  margin-left: 10px;
+  margin-top: 15px;
+}
